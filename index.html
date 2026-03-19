@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+
+    <!-- Primary SEO -->
+    <title>WALink — Send WhatsApp Messages Without Saving Contacts</title>
+    <meta
+      name="description"
+      content="WALink lets you send WhatsApp messages to any phone number instantly — no need to save contacts first. Supports all country codes with smart number formatting." />
+    <meta
+      name="keywords"
+      content="whatsapp direct message, wa.me link generator, whatsapp without saving number, WALink, send whatsapp, chat tanpa simpan nomor" />
+    <meta name="author" content="WALink" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://walink.app/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://walink.app/" />
+    <meta property="og:title" content="WALink — Chat on WhatsApp Instantly" />
+    <meta
+      property="og:description"
+      content="Send WhatsApp messages to any number without saving it as a contact. Smart phone number formatting for 240+ countries." />
+    <meta property="og:image" content="https://walink.app/icons/og-image.png" />
+    <meta property="og:site_name" content="WALink" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="id_ID" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="WALink — Chat on WhatsApp Instantly" />
+    <meta
+      name="twitter:description"
+      content="Send WhatsApp messages to any number without saving it as a contact." />
+    <meta
+      name="twitter:image"
+      content="https://walink.app/icons/og-image.png" />
+
+    <!-- PWA & Theme -->
+    <meta name="theme-color" content="#25D366" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="WALink" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "WALink",
+        "url": "https://walink.app",
+        "description": "Send WhatsApp messages to any phone number without saving contacts. Smart formatting for 240+ countries.",
+        "applicationCategory": "CommunicationApplication",
+        "operatingSystem": "Any",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "browserRequirements": "Requires JavaScript",
+        "inLanguage": ["en", "id"]
+      }
+    </script>
+  </head>
+  <body>
+    <main class="page">
+      <div class="container fade-in">
+        <!-- Top bar -->
+        <div class="topbar">
+          <div class="brand">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+            </div>
+            <span class="brand-name">WALink</span>
+          </div>
+          <button
+            type="button"
+            id="lang-toggle"
+            class="lang-toggle"
+            aria-label="Switch language">
+            <span id="lang-en">EN</span>
+            <span class="separator">/</span>
+            <span id="lang-id">ID</span>
+          </button>
+        </div>
+
+        <!-- Card -->
+        <div class="card">
+          <header class="card-header">
+            <h1 class="card-title" id="card-title">WALink</h1>
+            <p class="card-subtitle" id="card-subtitle">
+              Send a message without saving the number
+            </p>
+          </header>
+
+          <div class="fields">
+            <!-- Country picker -->
+            <div class="country-picker" id="country-picker">
+              <label class="field-label" id="country-label">Country</label>
+              <button type="button" id="country-btn" class="country-btn">
+                <span class="country-flag"></span>
+                <span class="country-name"></span>
+                <span class="country-dial"></span>
+                <svg
+                  class="country-chevron"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div id="country-dropdown" class="country-dropdown hidden">
+                <div class="country-search-wrap">
+                  <input
+                    type="text"
+                    id="country-search"
+                    class="country-search"
+                    placeholder="Search country or dial code..." />
+                </div>
+                <ul id="country-list" class="country-list"></ul>
+              </div>
+            </div>
+
+            <!-- Phone input -->
+            <div>
+              <label for="phone-input" class="field-label" id="phone-label"
+                >Phone Number</label
+              >
+              <div id="phone-shake-wrap">
+                <div class="phone-wrap">
+                  <span class="phone-prefix" id="phone-prefix">+62</span>
+                  <input
+                    type="tel"
+                    inputmode="numeric"
+                    autocomplete="tel"
+                    id="phone-input"
+                    class="phone-input"
+                    placeholder="e.g. 0812 3456 7890" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Message input -->
+            <div>
+              <label for="message-input" class="field-label" id="message-label"
+                >Message (optional)</label
+              >
+              <textarea
+                id="message-input"
+                rows="3"
+                class="message-input"
+                placeholder="Hi, I saw your listing..."></textarea>
+            </div>
+
+            <!-- Action button -->
+            <div class="action-btn-wrap">
+              <button type="button" id="action-btn" class="action-btn">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+                <span id="action-text">Chat on WhatsApp</span>
+              </button>
+            </div>
+          </div>
+
+          <p class="card-footer" id="card-footer">
+            Messages open directly in WhatsApp
+          </p>
+        </div>
+
+        <footer class="page-footer">
+          <p>
+            WALink &mdash;
+            <span id="seo-tagline">Chat instantly, no contact save needed</span>
+          </p>
+          <p style="color: #64748b99">
+            Made with 💚 by
+            <a
+              style="color: #64748b99"
+              href="https://jilly.web.id"
+              target="_blank"
+              >Jilly</a
+            >
+          </p>
+        </footer>
+      </div>
+    </main>
+
+    <script defer src="js/countries.js"></script>
+    <script defer src="js/i18n.js"></script>
+    <script defer src="js/normalizePhone.js"></script>
+    <script defer src="js/app.js"></script>
+  </body>
+</html>
