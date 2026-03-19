@@ -45,6 +45,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="WALink" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <link rel="icon" type="image/x-icon" href="/icons/favicon.ico" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -208,6 +211,11 @@
       </div>
     </main>
 
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/sw.js");
+      }
+    </script>
     <script defer src="js/countries.js"></script>
     <script defer src="js/i18n.js"></script>
     <script defer src="js/normalizePhone.js"></script>
